@@ -1,4 +1,4 @@
-update=Thu Nov 16 13:41:01 2017
+update=Thu Nov 16 16:31:44 2017
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,5 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=sn74cbt3257dr
-LibName31=sd_mux_library
+LibName30=sd_mux_library
