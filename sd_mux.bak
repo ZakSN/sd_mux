@@ -1,0 +1,80 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:sn74cbt3257dr
+LIBS:sd_mux-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "micro SD card multiplexer"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SN74CBT3257DR IC1
+U 1 1 5A0DE0AB
+P 6250 2900
+F 0 "IC1" H 6250 3400 60  0000 C CNN
+F 1 "SN74CBT3257DR" H 6200 2900 60  0000 C CNN
+F 2 "" H 6100 2750 60  0001 C CNN
+F 3 "" H 6100 2750 60  0001 C CNN
+	1    6250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74CBT3257DR IC2
+U 1 1 5A0DE130
+P 6250 4350
+F 0 "IC2" H 6250 4850 60  0000 C CNN
+F 1 "SN74CBT3257DR" H 6200 4350 60  0000 C CNN
+F 2 "" H 6100 4200 60  0001 C CNN
+F 3 "" H 6100 4200 60  0001 C CNN
+	1    6250 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Micro_SD_Card_Det J1
+U 1 1 5A0DE1ED
+P 9200 3550
+F 0 "J1" H 8550 4250 50  0000 C CNN
+F 1 "Micro_SD_Card_Det" H 9850 4250 50  0000 R CNN
+F 2 "" H 11250 4250 50  0001 C CNN
+F 3 "" H 9200 3650 50  0001 C CNN
+	1    9200 3550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
