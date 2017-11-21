@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name sd_mux_footprints)(type KiCad)(uri /home/zak/sd_switcher/boards/sd_mux/sd_mux_footprints.pretty)(options "")(descr ""))
+  (lib (name sd_plug_footprints)(type KiCad)(uri ${KIPRJMOD}/sd_plug_footprints.pretty)(options "")(descr ""))
+)
