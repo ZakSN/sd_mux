@@ -44,17 +44,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Conn_01x12 J1
-U 1 1 5A0E0273
-P 7150 3900
-F 0 "J1" H 7150 4500 50  0000 C CNN
-F 1 "MUX CONNECT" H 7150 3200 50  0000 C CNN
-F 2 "sd_mux_footprints:FFC_connector_SFW12R-2STE1LF" H 7150 3900 50  0001 C CNN
-F 3 "" H 7150 3900 50  0001 C CNN
-	1    7150 3900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Conn_01x08_Male P1
 U 1 1 5A0E0430
 P 4150 3850
@@ -65,52 +54,6 @@ F 3 "" H 4150 3850 50  0001 C CNN
 	1    4150 3850
 	1    0    0    -1  
 $EndComp
-Text GLabel 6800 3400 0    60   Input ~ 0
-DAT2
-Text GLabel 6800 3600 0    60   Input ~ 0
-DAT3/CD
-Text GLabel 6800 3800 0    60   Input ~ 0
-CMD
-Text GLabel 6450 3900 0    60   Input ~ 0
-VDD
-Text GLabel 6800 4100 0    60   Input ~ 0
-CLK
-Text GLabel 6800 4300 0    60   Input ~ 0
-DAT0
-Text GLabel 6800 4500 0    60   Input ~ 0
-DAT1
-Text GLabel 6450 4400 0    60   Input ~ 0
-VSS
-Wire Wire Line
-	6950 3400 6800 3400
-Wire Wire Line
-	6950 3600 6800 3600
-Wire Wire Line
-	6800 3800 6950 3800
-Wire Wire Line
-	6450 3900 6950 3900
-Wire Wire Line
-	6800 4100 6950 4100
-Wire Wire Line
-	6800 4300 6950 4300
-Wire Wire Line
-	6800 4500 6950 4500
-Wire Wire Line
-	6450 4400 6950 4400
-Wire Wire Line
-	6850 3500 6850 4400
-Wire Wire Line
-	6850 3500 6950 3500
-Wire Wire Line
-	6950 3700 6850 3700
-Connection ~ 6850 3700
-Wire Wire Line
-	6950 4000 6850 4000
-Connection ~ 6850 4000
-Wire Wire Line
-	6950 4200 6850 4200
-Connection ~ 6850 4200
-Connection ~ 6850 4400
 Text GLabel 4700 3200 2    60   Input ~ 0
 DAT2
 Text GLabel 4700 3400 2    60   Input ~ 0
@@ -164,4 +107,118 @@ Connection ~ 5100 3800
 Wire Wire Line
 	4350 4050 4700 4200
 Connection ~ 5100 4200
+$Comp
+L Conn_01x12 J2
+U 1 1 5A1489A0
+P 6950 3000
+F 0 "J2" H 6950 3600 50  0000 C CNN
+F 1 "MUX CONNECT BOTTOM" H 6950 2300 50  0000 C CNN
+F 2 "sd_mux_footprints:FFC_connector_SFW12R-2STE1LF" H 6950 3000 50  0001 C CNN
+F 3 "" H 6950 3000 50  0001 C CNN
+	1    6950 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 6550 3600 0    60   Input ~ 0
+DAT2
+Text GLabel 6550 3400 0    60   Input ~ 0
+DAT3/CD
+Text GLabel 6550 3200 0    60   Input ~ 0
+CMD
+Text GLabel 6300 3100 0    60   Input ~ 0
+VDD
+Text GLabel 6600 2900 0    60   Input ~ 0
+CLK
+Text GLabel 6600 2700 0    60   Input ~ 0
+DAT0
+Text GLabel 6600 2500 0    60   Input ~ 0
+DAT1
+Text GLabel 6300 2600 0    60   Input ~ 0
+VSS
+Wire Wire Line
+	6750 2500 6600 2500
+Wire Wire Line
+	6750 2700 6600 2700
+Wire Wire Line
+	6750 2900 6600 2900
+Wire Wire Line
+	6750 3200 6550 3200
+Wire Wire Line
+	6750 3400 6550 3400
+Wire Wire Line
+	6750 3600 6550 3600
+Wire Wire Line
+	6300 3100 6750 3100
+Wire Wire Line
+	6750 3500 6650 3500
+Wire Wire Line
+	6650 3500 6650 2600
+Wire Wire Line
+	6750 2600 6300 2600
+Connection ~ 6650 2600
+Wire Wire Line
+	6750 2800 6650 2800
+Connection ~ 6650 2800
+Wire Wire Line
+	6750 3000 6650 3000
+Connection ~ 6650 3000
+Wire Wire Line
+	6750 3300 6650 3300
+Connection ~ 6650 3300
+$Comp
+L Conn_01x12 J1
+U 1 1 5A15A7EC
+P 6950 4450
+F 0 "J1" H 6950 5050 50  0000 C CNN
+F 1 "MUX CONNECT TOP" H 6950 3750 50  0000 C CNN
+F 2 "sd_mux_footprints:FFC_connector_SFW12R-2STE1LF" H 6950 4450 50  0001 C CNN
+F 3 "" H 6950 4450 50  0001 C CNN
+	1    6950 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 6550 5050 0    60   Input ~ 0
+DAT2
+Text GLabel 6550 4850 0    60   Input ~ 0
+DAT3/CD
+Text GLabel 6550 4650 0    60   Input ~ 0
+CMD
+Text GLabel 6300 4550 0    60   Input ~ 0
+VDD
+Text GLabel 6600 4350 0    60   Input ~ 0
+CLK
+Text GLabel 6600 4150 0    60   Input ~ 0
+DAT0
+Text GLabel 6600 3950 0    60   Input ~ 0
+DAT1
+Text GLabel 6300 4050 0    60   Input ~ 0
+VSS
+Wire Wire Line
+	6750 3950 6600 3950
+Wire Wire Line
+	6750 4150 6600 4150
+Wire Wire Line
+	6750 4350 6600 4350
+Wire Wire Line
+	6750 4650 6550 4650
+Wire Wire Line
+	6750 4850 6550 4850
+Wire Wire Line
+	6750 5050 6550 5050
+Wire Wire Line
+	6300 4550 6750 4550
+Wire Wire Line
+	6750 4950 6650 4950
+Wire Wire Line
+	6650 4950 6650 4050
+Wire Wire Line
+	6750 4050 6300 4050
+Connection ~ 6650 4050
+Wire Wire Line
+	6750 4250 6650 4250
+Connection ~ 6650 4250
+Wire Wire Line
+	6750 4450 6650 4450
+Connection ~ 6650 4450
+Wire Wire Line
+	6750 4750 6650 4750
+Connection ~ 6650 4750
 $EndSCHEMATC

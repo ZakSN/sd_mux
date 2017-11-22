@@ -1,7 +1,7 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
-    (links 0)
+    (links 57)
     (no_connects 0)
     (area 101.524999 67.234999 188.035001 121.995001)
     (thickness 1.6)
