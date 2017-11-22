@@ -1,0 +1,9 @@
+(module 125mil_plated_mounting_hole (layer F.Cu) (tedit 5A15BDCD)
+  (fp_text reference REF** (at 0 3) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value 125mil_plated_mounting_hole (at 0 -3) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 thru_hole circle (at 0 0) (size 4.572 4.572) (drill 3.175) (layers *.Cu *.Mask))
+)
