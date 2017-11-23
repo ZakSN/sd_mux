@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/zak/sd_switcher/boards/sd_mux/sd_mux.sch)
-    (date "Wed Nov 22 15:30:50 2017")
+    (date "Thu Nov 23 10:43:06 2017")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -230,10 +230,10 @@
         (pin (num 15) (name OE) (type input))
         (pin (num 16) (name VCC) (type power_in)))))
   (libraries
-    (library (logical conn)
-      (uri /usr/local/share/kicad/library/conn.lib))
     (library (logical device)
       (uri /usr/local/share/kicad/library/device.lib))
+    (library (logical conn)
+      (uri /usr/local/share/kicad/library/conn.lib))
     (library (logical sd_mux_library)
       (uri /home/zak/sd_switcher/boards/sd_mux/sd_mux_library.lib)))
   (nets
