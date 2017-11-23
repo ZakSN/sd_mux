@@ -3,7 +3,7 @@
   (general
     (links 57)
     (no_connects 0)
-    (area 95.25 64.77 193.614049 122.87)
+    (area 101.524999 67.234999 188.035001 121.995001)
     (thickness 1.6)
     (drawings 16)
     (tracks 379)
@@ -27,7 +27,7 @@
     (33 F.Adhes user)
     (34 B.Paste user)
     (35 F.Paste user)
-    (36 B.SilkS user hide)
+    (36 B.SilkS user)
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
@@ -206,7 +206,7 @@
   )
 
   (module sd_mux_footprints:fbsd_logo (layer B.Cu) (tedit 0) (tstamp 5A1475C5)
-    (at 78.105 100.965 180)
+    (at 146.05 94.615 180)
     (fp_text reference G*** (at 0 0 180) (layer B.SilkS) hide
       (effects (font (thickness 0.3)) (justify mirror))
     )
