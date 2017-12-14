@@ -1,0 +1,66 @@
+#!/bin/sh
+
+# this script allows selects which device (host or target) the micro SD card is
+# connected to
+
+# assumptions:
+# 1. this is on an rpi3 model b and that the toggle pin is attached to gpio 23
+# 2. target is device 1, host is device 2
+# 3. host plug is plugged into ugen0.4
+
+toggle_pin=23
+host_select=0
+target_select=1
+host_device=0.4
+
+usage()
+{
+	echo "usage: switcher [-h|-t]"
+	echo "-h	Attach to host"
+	echo "-t	Attach to target"
+	exit 1
+}
+
+setup_gpio()
+{
+	gpioctl -c $toggle_pin OUT
+}
+
+configure_host_usb()
+{
+	usbconfig -d "${host_device}" power_off
+	usbconfig -d "${host_device}" power_on
+}
+
+host()
+{
+	echo "attaching to host"
+	setup_gpio
+	gpioctl $toggle_pin $host_select
+	configure_host_usb
+}
+
+target()
+{
+	echo "attaching to target"
+	setup_gpio
+	gpioctl $toggle_pin $target_select
+	configure_host_usb
+	# ideally the target device is connected to a controllable power source
+	# and set to reboot on a power cycle. during testing purposes no such 
+	# power source was available so:
+	echo "please power cycle target"
+}
+
+if [ $# -ne 1 ];
+then
+	usage
+fi
+
+case $1 in
+	"-h") host;;
+	"-t") target;;
+	*) usage;;
+esac
+
+exit 1
