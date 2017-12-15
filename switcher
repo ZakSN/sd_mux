@@ -1,10 +1,10 @@
 #!/bin/sh
 
-# this script allows selects which device (host or target) the micro SD card is
+# This script allows selects which device (host or target) the micro SD card is
 # connected to
 
 # assumptions:
-# 1. this is on an rpi3 model b and that the toggle pin is attached to gpio 23
+# 1. this script is running on a rpi3 model b and that the mux select pin is attached to gpio 23
 # 2. target is device 1, host is device 2
 # 3. host plug is plugged into ugen0.4
 
@@ -46,8 +46,8 @@ target()
 	setup_gpio
 	gpioctl $toggle_pin $target_select
 	configure_host_usb
-	# ideally the target device is connected to a controllable power source
-	# and set to reboot on a power cycle. during testing purposes no such 
+	# Ideally the target device is connected to a controllable power source
+	# and set to reboot on a power cycle. During testing no such 
 	# power source was available so:
 	echo "please power cycle target"
 }
